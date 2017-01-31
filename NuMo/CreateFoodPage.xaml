@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Picker Values from Manning CreateItemViewController.swift -->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		Title = "Create Food"
+		x:Class="NuMo.CreateFoodPage">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Name="Save" />
+  </ContentPage.ToolbarItems>
+  <ContentPage.Content>
+    <StackLayout>
+      <TableView>
+        <TableRoot>
+          <TableSection Title="Item">
+            <EntryCell Label="Name"/>
+            <ViewCell>
+              <StackLayout Orientation = "Horizontal">
+                <Label Text = "Food Group" VerticalOptions="Center" Margin="18,0,0,0"/>
+                <Picker x:Name="FoodGroupPicker" HorizontalOptions="FillAndExpand">
+                  <Picker.Items>
+                    <x:String>Dairy and Egg</x:String>
+                    <x:String>Spices and Herbs</x:String>
+                    <x:String>Baby Food</x:String>
+                    <x:String>Fats and Oils</x:String>
+                    <x:String>Poultry</x:String>
+                    <x:String>Soups, Sauces, and Gravies</x:String>
+                    <x:String>Sausages and Luncheon Meats</x:String>
+                    <x:String>Breakfast Cereals</x:String>
+                    <x:String>Fruits and Fruit Juices</x:String>
+                    <x:String>Pork</x:String>
+                    <x:String>Vegetables</x:String>
+                    <x:String>Nuts and Seeds</x:String>
+                    <x:String>Beef</x:String>
+                    <x:String>Beverages</x:String>
+                    <x:String>Fish</x:String>
+                    <x:String>Legumes</x:String>
+                    <x:String>Lamb,Veal, and Game</x:String>
+                    <x:String>Baked Goods</x:String>
+                    <x:String>Sweets</x:String>
+                    <x:String>Grains and Pasta</x:String>
+                    <x:String>Fast Foods</x:String>
+                    <x:String>Meals,Entrees,and Sides</x:String>
+                    <x:String>Snacks</x:String>
+                    <x:String>Restaurant Foods</x:String>
+                    <x:String>Supplements</x:String>
+                  </Picker.Items>
+                </Picker>
+              </StackLayout>
+            </ViewCell>
+
+          </TableSection>
+          <TableSection Title="Serving">
+            <ViewCell>
+              <StackLayout Orientation = "Horizontal">
+                <Label Text = "Description" VerticalOptions="Center" Margin="18,0,0,0"/>
+                <Picker x:Name="ServingPicker" HorizontalOptions="FillAndExpand">
+                  <Picker.Items>
+                    <x:String>Serving</x:String>
+                    <x:String>Bottle</x:String>
+                    <x:String>Box</x:String>
+                    <x:String>Can</x:String>
+                    <x:String>Container</x:String>
+                    <x:String>Cube</x:String>
+                    <x:String>Cup</x:String>
+                    <x:String>Each</x:String>
+                    <x:String>Fluid Ounce</x:String>
+                    <x:String>Gallon</x:String>
+                    <x:String>Gram</x:String>
+                    <x:String>Individual</x:String>
+                    <x:String>Jar</x:String>
+                    <x:String>Liter</x:String>
+                    <x:String>Milligram</x:String>
+                    <x:String>Ounce</x:String>
+                    <x:String>Package</x:String>
+                    <x:String>Piece</x:String>
+                    <x:String>Pint</x:String>
+                    <x:String>Pound</x:String>
+                    <x:String>Scoop</x:String>
+                    <x:String>Slice</x:String>
+                    <x:String>Stick</x:String>
+                    <x:String>Tablespoon</x:String>
+                    <x:String>Tablet</x:String>
+                    <x:String>Teaspoon</x:String>
+                    <x:String>Quart</x:String>
+                    <x:String>Pouch</x:String>
+                  </Picker.Items>
+                </Picker>
+              </StackLayout>
+            </ViewCell>
+          </TableSection>
+          <TableSection Title = "Nutrient Values">
+            <EntryCell Label = "Calories (kcal)"/>
+            <EntryCell Label = "Fat (g)"/>
+            <EntryCell Label = "Saturated Fat(g)"/>
+            <EntryCell Label = "Protein (g)"/>
+            <EntryCell Label = "Carbohydrate (g)"/>
+            <EntryCell Label = "Fiber (g)"/>
+            <EntryCell Label = "Sugar (g)"/>
+            <EntryCell Label = "Cholesterol (mg)"/>
+          </TableSection >
+          <TableSection Title = "Vitamins">
+            <EntryCell Label = "Vitamin C (mg)"/>
+            <EntryCell Label = "Vitamin A (IU)"/>
+            <EntryCell Label = "Vitamin D (IU)"/>
+            <EntryCell Label = "Vitamin E (IU)"/>
+            <EntryCell Label = "Vitamin B12 (mcg)"/>
+            <EntryCell Label = "Folate (mcg))"/>
+          </TableSection >
+          <TableSection Title = "Minerals">
+            <EntryCell Label = "Calcium (mg)"/>
+            <EntryCell Label = "Phosphorus (mg)"/>
+            <EntryCell Label = "Potassium (mg)"/>
+            <EntryCell Label = "Sodium (mg)"/>
+            <EntryCell Label = "Magnesium (mg)"/>
+            <EntryCell Label = "Iron (mg)"/>
+            <EntryCell Label = "Zinc (mg)"/>
+            <EntryCell Label = "Selenium (mcg)"/>
+            <EntryCell Label = "Copper (mg)"/>
+            <EntryCell Label = "Manganese (mg)"/>
+          </TableSection >
+          <TableSection Title = "Fatty Acids">
+            <EntryCell Label = "DHA (mg)"/>
+            <EntryCell Label = "EPA (mg)"/>
+            <EntryCell Label = "DPA (mg)"/>
+            <EntryCell Label = "ALA (mg)"/>
+            <EntryCell Label = "Other Omega-3 (mg)"/>
+            <EntryCell Label = "Total Omega-6 (mg)"/>
+          </TableSection >
+          <TableSection Title = "Other">
+            <EntryCell Label = "Caffeine (g)"/>
+          </TableSection >
+
+        </TableRoot>
+      </TableView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
