@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 
@@ -26,6 +26,13 @@ namespace NuMo
 				Title = "Add Item",
 				IconSource = "ic_restaurant_black_24dp.png",
 				TargetType = typeof(AddItemPage)
+			});
+
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "Create Recipe",
+				IconSource = "ic_local_dining_black_24dp.png",
+				TargetType = typeof(CreateRecipePage)
 			});
 
 			masterPageItems.Add(new MasterPageItem
