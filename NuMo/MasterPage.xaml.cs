@@ -48,6 +48,13 @@ namespace NuMo
 				TargetType = typeof(SettingsPage)
 			});
 
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "Dietary Reference Intakes",
+				IconSource = "ic_settings_black_24dp.png",
+				TargetType = typeof(DRIPage)
+			});
+
 
 			listView.ItemsSource = masterPageItems;
 		}
