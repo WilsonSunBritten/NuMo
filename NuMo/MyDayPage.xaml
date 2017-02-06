@@ -4,11 +4,11 @@
 		Title="My Day"
 		x:Class="NuMo.MyDayPage">
   <ContentPage.ToolbarItems>
-    <ToolbarItem Name="Test" />
+    <ToolbarItem Name="+" />
   </ContentPage.ToolbarItems>
 	<ContentPage.Content>
 		<StackLayout>
-			<Label Text="Myday data goes here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+			<Button Text="Items" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" />
       <Button Text="Button" />
 		</StackLayout>
 	</ContentPage.Content>
