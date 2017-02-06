@@ -14,7 +14,7 @@
 			  <Button Text="Items" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold"  Clicked="OnButtonClicked" />
         <Button Text="Nutrients" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" />
       </StackLayout>
-      <!--<Slider VerticalOptions="Center" ValueChanged="OnSliderValueChanged" />-->
+      <Switch HorizontalOptions="Center"/>
       <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
         <Button Text="Visualize"/>
         <Button Text="Reminder"/>

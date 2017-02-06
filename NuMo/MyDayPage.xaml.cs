@@ -19,5 +19,9 @@ namespace NuMo
         {
 
         }
+        void switcher_Toggled(object sender, ToggledEventArgs e)
+        {
+//           label.Text = String.Format("Switch is now {0}", e.Value);
+        }
     }
 }
