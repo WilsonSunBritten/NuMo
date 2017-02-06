@@ -1,15 +1,25 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
 		Title="My Day"
+    Icon="pieGraph.png"
 		x:Class="NuMo.MyDayPage">
   <ContentPage.ToolbarItems>
     <ToolbarItem Name="+" />
   </ContentPage.ToolbarItems>
 	<ContentPage.Content>
 		<StackLayout>
-			<Button Text="Items" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" />
-      <Button Text="Button" />
-		</StackLayout>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+			  <Button Text="Items" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold"  Clicked="OnButtonClicked" />
+        <Button Text="Nutrients" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" />
+      </StackLayout>
+      <!--<Slider VerticalOptions="Center" ValueChanged="OnSliderValueChanged" />-->
+      <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+        <Button Text="Visualize"/>
+        <Button Text="Reminder"/>
+      </StackLayout>
+      <DatePicker HorizontalOptions="Center" Date="{x:Static sys:DateTime.Now}"/>
+    </StackLayout>
 	</ContentPage.Content>
 </ContentPage>

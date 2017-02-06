@@ -11,5 +11,13 @@ namespace NuMo
 		{
 			InitializeComponent();
 		}
-	}
+        void OnSliderValueChanged(object sender, ValueChangedEventArgs args)
+        {
+
+        }
+        void OnButtonClicked(object sender, EventArgs args)
+        {
+
+        }
+    }
 }
