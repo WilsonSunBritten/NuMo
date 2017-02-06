@@ -5,14 +5,14 @@
 		Title="Settings">
 	<ContentPage.Content>
 		<StackLayout>
-			<Label Text="User Settings For:" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin = "0,10,0,0" />
 			<TableView>
 			<TableRoot>
 					<TableSection Title= "User Info">
+						<EntryCell Text="Name: " HorizontalTextAlignment="Start" x:Name= "settings_name"/>
 						<ViewCell>
 						<StackLayout Orientation = "Horizontal">
 								<Label Text = "Gender" VerticalOptions="Center" Margin="18,0,0,0"/>
-								<Picker x:Name="GenderPicker" HorizontalOptions="FillAndExpand">
+								<Picker x:Name="settings_gender" HorizontalOptions="FillAndExpand">
 									<Picker.Items>
 										<x:String>Female</x:String>
 										<x:String>Male</x:String>
@@ -22,14 +22,14 @@
 						</ViewCell>
 
 
-						<EntryCell Label = "Age:"/>
-						<EntryCell Label = "Weight(lbs):"/>
+						<EntryCell Text = "Age: " x:Name="settings_age"/>
+						<EntryCell Text = "Weight(lbs): " x:Name = "settings_weight"/>
 						<ViewCell>
 							<Label Text = "Height" VerticalOptions="Center" Margin="18,0,0,0"/>
 						</ViewCell>
 
-                        <EntryCell Text = "Feet:"/>
-                        <EntryCell Text = "Inches:"/>
+                        <EntryCell Text = "Feet: " x:Name="settings_feet"/>
+                        <EntryCell Text = "Inches: " x:Name="settings_inches"/>
 						<SwitchCell Text = "Pregnant"/>
 						<SwitchCell Text = "Lactating"/>
 						</TableSection>
@@ -50,6 +50,8 @@
 					</TableSection>
 				</TableRoot>
 			</TableView>
+			<Button Text = "Save"
+				Clicked = "fillIn"/>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
