@@ -30,8 +30,8 @@
 
                         <EntryCell Text = "Feet: " x:Name="settings_feet"/>
                         <EntryCell Text = "Inches: " x:Name="settings_inches"/>
-						<SwitchCell Text = "Pregnant"/>
-						<SwitchCell Text = "Lactating"/>
+						<SwitchCell Text = "Pregnant" x:Name = "settings_pregnant"/>
+						<SwitchCell Text = "Lactating" x:Name = "settings_lactating"/>
 						</TableSection>
 
 					<TableSection Title = "Health Concerns">
