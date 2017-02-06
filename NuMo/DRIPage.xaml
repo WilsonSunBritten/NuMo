@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="NuMo.DRIPage">
+	<ContentPage.Content>
+		<TableView>
+			<TableRoot>
+			<TableSection Title = "Dietary Reference Intakes">
+			<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Calcium (mg/d): " Margin="18,10,0,0"/>
+				<Label Text = "Value here" Margin="0,10,0,0" x:Name="dri_calcium"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Carbohydrates (g/d): " Margin="18,10,0,0" x:Name="dri_carbohydrates"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Protein (g/kg/d): " Margin="18,10,0,0" x:Name="dri_protein"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+					<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Vitamin A (μg/d): " Margin="18,10,0,0" x:Name="dri_vitaminA"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+					<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Vitamin C (mg/d): " Margin="18,10,0,0" x:Name="dri_vitaminC"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Vitamin D (μg/d): " Margin="18,10,0,0" x:Name="dri_vitaminD"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Vitamin E (mg/d): " Margin="18,10,0,0" x:Name="dri_vitaminE"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Thiamin (mg/d): " Margin="18,10,0,0" x:Name="dri_thiamin"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Riboflavin (mg/d): " Margin="18,10,0,0" x:Name="dri_riboflavin"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Niacin (mg/d): " Margin="18,10,0,0" x:Name="dri_niacin"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Vitamin B6 (mg/d): " Margin="18,10,0,0" x:Name="dri_vitaminB6"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Folate (μg/d): " Margin="18,10,0,0" x:Name="dri_folate"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Vitamin B12 (μg/d): " Margin="18,10,0,0" x:Name="dri_vitaminB12"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Copper (μg/d): " Margin="18,10,0,0" x:Name="dri_copper"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+				
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Iodine (μg/d): " Margin="18,10,0,0" x:Name="dri_iodine"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Iron (mg/d): " Margin="18,10,0,0" x:Name="dri_iron"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Magnesium (mg/d): " Margin="18,10,0,0" x:Name="dri_magnesium"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Molybdenum (μg/d): " Margin="18,10,0,0" x:Name="dri_molybdenum"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Phosphorus (mg/d): " Margin="18,10,0,0" x:Name="dri_phosphorus"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Selenium (μg/d): " Margin="18,10,0,0" x:Name="dri_selenium"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+
+				<ViewCell>
+				<StackLayout Orientation="Horizontal">
+				<Label Text = "Zinc (mg/d): " Margin="18,10,0,0" x:Name="dri_zinc"/>
+				<Label Text = "Value here" Margin="0,10,0,0"/>
+						</StackLayout>
+					</ViewCell>
+				
+				</TableSection>
+			</TableRoot>
+		</TableView>
+	</ContentPage.Content>
+</ContentPage>
