@@ -52,7 +52,7 @@ namespace NuMo
 			{
 				Title = "Dietary Reference Intakes",
 				IconSource = "ic_settings_black_24dp.png",
-				TargetType = typeof(DRIPage)
+				//TargetType = typeof(DRIPage)
 			});
 
 

@@ -18,6 +18,7 @@
       
       <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
         <Button Text="Visualize"/>
+        <!--<Image Source="pieGraph.png" />-->
         <Button Text="Reminder"/>
       </StackLayout>
       
