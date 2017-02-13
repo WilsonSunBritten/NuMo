@@ -3,22 +3,25 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
 		Title="My Day"
-    Icon="pieGraph.png"
 		x:Class="NuMo.MyDayPage">
   <ContentPage.ToolbarItems>
     <ToolbarItem Name="+" />
   </ContentPage.ToolbarItems>
 	<ContentPage.Content>
+    
 		<StackLayout>
       <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-			  <Button Text="Items" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold"  Clicked="OnButtonClicked" />
-        <Button Text="Nutrients" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" />
+			  <Button Text="Items" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold"  Clicked="OnItemsClicked" />
+        <Button Text="Nutrients" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" Clicked="OnNutrientsClicked" />
       </StackLayout>
       <Switch HorizontalOptions="Center"/>
+      
       <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
         <Button Text="Visualize"/>
         <Button Text="Reminder"/>
       </StackLayout>
+      
+      <Label x:Name="items" Text = "0 button clicks" FontSize="Large" HorizontalOptions="Center" />
       <DatePicker HorizontalOptions="Center" Date="{x:Static sys:DateTime.Now}"/>
     </StackLayout>
 	</ContentPage.Content>
